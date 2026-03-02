@@ -15,7 +15,7 @@ public:
                 hash_table[nums.at(i)] = i; // If not, add it to the hash table
         }
 
-        // No solution found: {}
+        // No solution found
         return {};
     }
 };
