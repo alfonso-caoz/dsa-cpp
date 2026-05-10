@@ -20,16 +20,19 @@ FetchContent_MakeAvailable(googletest)
 ############################## Adding GTest Files ##############################
 enable_testing()
 
-add_executable(test-two-sum ./test/1-two-sum/test-two-sum.cpp)
-#add_executable(two-sum ./src/1-two-sum/two-sum.cpp)
-
-target_link_libraries(
-  test-two-sum
-  #two-sum
-  GTest::gtest_main
-)
-
+# CMake Helper functions to use GoogleTest
 include(GoogleTest)
-gtest_discover_tests(test-two-sum)
+
+# Function to build each module separately: a binary for each module/file
+function(add_gtest_target test_name test_file)
+  add_executable(${test_name} ${test_file})
+  target_link_libraries(${test_name} GTest::gtest_main)
+  gtest_discover_tests(${test_name}
+    EXTRA_ARGS "--gtest_color=yes" "--gtest_print_time") # List the binaries to be executed individually with "ctest"
+endfunction()
+
+# Add new test files here
+add_gtest_target(test-two-sum ./test/1-two-sum/test-two-sum.cpp)
+add_gtest_target(test-roman-to-integer ./test/13-roman-to-integer/test-roman-to-integer.cpp)
 
 ################################################################################
