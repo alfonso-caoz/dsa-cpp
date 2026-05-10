@@ -1,3 +1,6 @@
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     // Time Complexity O(n) [n = s.length() = t.length()]. 
@@ -7,9 +10,9 @@ public:
     // Another approach: 
     // 1 Hash map, but 2 for loops required. One to iterate s, another to check if s[i] (keys) exists in all Values (t).: s "bd" t: "bb",
     // count() and find() operates just over keys, not values of a hash map.
-    bool isIsomorphic(string s, string t) {
-        unordered_map<char, char> maps;
-        unordered_map<char, char> mapt;
+    bool isIsomorphic(std::string s, std::string t) {
+        std::unordered_map<char, char> maps;
+        std::unordered_map<char, char> mapt;
 
         for (int i = 0; i < s.length(); ++i) {
             if (maps.count(s[i])!=0 && maps[s[i]]!=t[i]) return false;
