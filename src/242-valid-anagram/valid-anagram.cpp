@@ -1,13 +1,16 @@
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     // Time Complexity O(n). Space Complexity O(1). ***Avoid using find and count inside of a for loop, Time Complexity can be messed up.
     // operator[]: if the key does not exist, it inserts it with a default value for int or double: 0. Other types structure problematic.
     // Hash maps are equal if have same key-value pairs, despite the order.
-    bool isAnagram(string s, string t) {
+    bool isAnagram(std::string s, std::string t) {
         if (s.length() != t.length()) return false;
 
-        unordered_map<char, int> sHashCount;
-        unordered_map<char, int> tHashCount;
+        std::unordered_map<char, int> sHashCount;
+        std::unordered_map<char, int> tHashCount;
 
         for (int i = 0; i < s.length(); ++i) {
             sHashCount[s[i]] = sHashCount[s[i]] + 1; 
