@@ -1,7 +1,9 @@
+#include <vector>
+
 class Solution {
 public: 
     // Time Complexity O(m+n). Space Complexity O(1).
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+    void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n) {
         int i_m = m - 1;
         int i_n = n - 1;
         int i_mn = m + n - 1;
