@@ -1,7 +1,9 @@
+#include <vector>
+
 class Solution {
 public:
     // Time Complexity O(n). Space Complexity O(1).
-    bool canPlaceFlowers(vector<int>& flowerbed, int n) {
+    bool canPlaceFlowers(std::vector<int>& flowerbed, int n) {
         if (n == 0) return true;
 
         int count = 0;
