@@ -34,7 +34,7 @@ endfunction()
 add_gtest_target(test-two-sum ./test/1-two-sum/test-two-sum.cpp)
 add_gtest_target(test-roman-to-integer ./test/13-roman-to-integer/test-roman-to-integer.cpp)
 add_gtest_target(test-valid-parentheses ./test/20-valid-parentheses/test-valid-parentheses.cpp)
-#add_gtest_target(test-merge-two-sorted-lists ./test/21-merge-two-sorted-lists/test-merge-two-sorted-lists.cpp) # Linked Lists
+add_gtest_target(test-merge-two-sorted-lists ./test/21-merge-two-sorted-lists/test-merge-two-sorted-lists.cpp) # Linked Lists
 add_gtest_target(test-merge-sorted-array ./test/88-merge-sorted-array/test-merge-sorted-array.cpp)
 add_gtest_target(test-linked-list-cycle ./test/141-linked-list-cycle/test-linked-list-cycle.cpp) # Linked Lists
 #add_gtest_target(test-intersection-of-two-linked-lists ./test/160-intersection-of-two-linked-lists/test-intersection-of-two-linked-lists.cpp) # Linked Lists
