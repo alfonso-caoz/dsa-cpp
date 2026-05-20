@@ -34,4 +34,4 @@ Data Structure and Algorithm (DSA) exercises solved in C++, considering time and
 ## Pending Work
 
 - [ ] Solve 25 DSA Exercises: 18/25
-- [ ] Implement Local Unit Tests with GTest: 14/18
+- [ ] Implement Local Unit Tests with GTest: 15/18
