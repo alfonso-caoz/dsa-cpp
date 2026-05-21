@@ -1,5 +1,7 @@
+ #include "../../include/dsa-cpp/tree-node.h"
+
 /**
- * Definition for a binary tree node.
+ * Definition for a binary tree node (tree-node.h).
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
@@ -9,7 +11,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
+
+ class Solution {
 public:
     // Time Complexity O(n). Space Complexity O(n): Recursive Auxiliary Stack.
     TreeNode* invertTree(TreeNode* root) {
