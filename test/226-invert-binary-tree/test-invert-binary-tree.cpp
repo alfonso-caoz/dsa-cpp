@@ -10,7 +10,6 @@
 #include <vector>
 #include <queue>
 #include <optional>
-#include <unordered_set>
 #include "../../src/226-invert-binary-tree/invert-binary-tree.cpp"
 
 // Input/Output Struct (Template)
