@@ -1,7 +1,7 @@
  #include "../../include/dsa-cpp/tree-node.h"
- 
+
 /**
- * Definition for a binary tree node.
+ * Definition for a binary tree node (tree-node.h).
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
