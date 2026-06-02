@@ -1,5 +1,9 @@
+#include "../../include/dsa-cpp/tree-node.h"
+#include <vector>
+#include <stack>
+
 /*
-// Definition for a Node.
+// Definition for a Node (tree-node.h).
 class Node {
 public:
     int val;
@@ -17,9 +21,6 @@ public:
     }
 };
 */
-
-#include <vector>
-#include <stack>
 
 class Solution {
 public:
