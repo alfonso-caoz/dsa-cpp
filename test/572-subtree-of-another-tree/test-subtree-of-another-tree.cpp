@@ -121,10 +121,10 @@ TEST_P(SolutionParameterizedTestFixture, IsSubtree) {
   TreeNode* root = vectorToTree(test_param.vector_root);
   TreeNode* subRoot = vectorToTree(test_param.vector_sub_root);
   
-  // 2- Act: vector_actual_isSubtree
+  // 2- Act: actual_isSubtree
   bool actual_isSubtree = solution.isSubtree(root, subRoot);
 
-  // 3- Assert: vector_actual_isSubtree vs vector_expected_isSubtree
+  // 3- Assert: actual_isSubtree vs expected_isSubtree
   EXPECT_EQ(actual_isSubtree, test_param.expected_isSubtree);
 }
 
