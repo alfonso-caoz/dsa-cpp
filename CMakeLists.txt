@@ -46,7 +46,7 @@ add_gtest_target(test-valid-anagram ./test/242-valid-anagram/test-valid-anagram.
 add_gtest_target(test-find-all-numbers-disappeared-in-an-array ./test/448-find-all-numbers-disappeared-in-an-array/test-find-all-numbers-disappeared-in-an-array.cpp)
 add_gtest_target(test-reverse-words-in-a-string-iii ./test/557-reverse-words-in-a-string-iii/test-reverse-words-in-a-string-iii.cpp)
 add_gtest_target(test-subtree-of-another-tree ./test/572-subtree-of-another-tree/test-subtree-of-another-tree.cpp) # Trees
-#add_gtest_target(test-n-ary-tree-preorder-traversal ./test/589-n-ary-tree-preorder-traversal/test-n-ary-tree-preorder-traversal.cpp) # Trees 775 -> 589
+add_gtest_target(test-n-ary-tree-preorder-traversal ./test/589-n-ary-tree-preorder-traversal/test-n-ary-tree-preorder-traversal.cpp) # Trees 775 -> 589
 add_gtest_target(test-can-place-flowers ./test/605-can-place-flowers/test-can-place-flowers.cpp)
 add_gtest_target(test-longest-continuous-increasing-subsequence ./test/674-longest-continuous-increasing-subsequence/test-longest-continuous-increasing-subsequence.cpp)
 
