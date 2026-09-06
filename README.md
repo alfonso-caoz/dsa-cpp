@@ -14,7 +14,15 @@ Data Structure and Algorithm (DSA) exercises solved in C++, considering time and
 
 ### Implementation
 
-- Create `build` folder, build source code, and change directory to `build`, from the root folder `dsa-cpp`:
+- Clone this repository locally:
+    ```bash
+    git clone https://github.com/alfonso-caoz/dsa-cpp.git
+    ```
+- Go to the cloned repository folder `dsa-cpp`: 
+    ```bash
+    cd dsa-cpp
+    ```
+- Create `build` folder, build source code, and change directory to `build`:
     ```bash
     cmake -B build && cmake --build build && cd build
     ```
