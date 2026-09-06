@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 169-majority-element (src folder)
-TEST_P(SolutionParameterizedTestFixture, MajorityElement) {
+TEST_P(SolutionParameterizedTestFixture, T169) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

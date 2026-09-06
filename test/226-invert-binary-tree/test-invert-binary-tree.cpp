@@ -114,7 +114,7 @@ protected:
 };
 
 // Test Parameterized: 226-invert-binary-tree (src folder)
-TEST_P(SolutionParameterizedTestFixture, InvertTree) {
+TEST_P(SolutionParameterizedTestFixture, T226) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   TreeNode* root = vectorToTree(test_param.vector_root);

@@ -115,7 +115,7 @@ protected:
 };
 
 // Test Parameterized: 572-subtree-of-another-tree (src folder)
-TEST_P(SolutionParameterizedTestFixture, IsSubtree) {
+TEST_P(SolutionParameterizedTestFixture, T572) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   TreeNode* root = vectorToTree(test_param.vector_root);

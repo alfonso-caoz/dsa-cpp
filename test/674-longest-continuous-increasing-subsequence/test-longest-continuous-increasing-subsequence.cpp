@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 674-longest-continuous-increasing-subsequence (src folder)
-TEST_P(SolutionParameterizedTestFixture, FindLengthOfLCIS) {
+TEST_P(SolutionParameterizedTestFixture, T674) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

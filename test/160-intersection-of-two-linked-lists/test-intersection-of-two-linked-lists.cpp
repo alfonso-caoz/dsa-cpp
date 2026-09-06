@@ -131,7 +131,7 @@ protected:
 };
 
 // Test Parameterized: 160-intersection-of-two-linked-lists (src folder)
-TEST_P(SolutionParameterizedTestFixture, GetIntersectionNode) {
+TEST_P(SolutionParameterizedTestFixture, T160) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   auto [listA, listB] = vectorToLinkedListWithIntersectionOption(test_param.intersectVal,

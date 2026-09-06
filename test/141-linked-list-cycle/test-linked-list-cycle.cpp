@@ -82,7 +82,7 @@ protected:
 };
 
 // Test Parameterized: 141-linked-list-cycle (src folder)
-TEST_P(SolutionParameterizedTestFixture, HasCycle) {
+TEST_P(SolutionParameterizedTestFixture, T141) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   head = vectorToLinkedListWithCycleOption(test_param.vector_linked_list, test_param.pos);

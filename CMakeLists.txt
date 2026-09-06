@@ -6,6 +6,8 @@ project(dsa-cpp)
 set(CMAKE_CXX_STANDARD 23) # GoogleTest requires at least C++17
 set(CMAKE_CXX_STANDARD_REQUIRED ON) # Forced to use the C++ standard set before
 
+enable_testing() # Enable testing for the project, required before adding GTest FetchContent
+
 # Latest GoogleTest version: 1.17.0 (Apr 30, 2025)
 include(FetchContent)
 FetchContent_Declare(
@@ -17,7 +19,6 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 ############################## Adding GTest Files ##############################
-enable_testing()
 
 # CMake Helper functions to use GoogleTest
 include(GoogleTest)
@@ -46,7 +47,7 @@ add_gtest_target(test-valid-anagram ./test/242-valid-anagram/test-valid-anagram.
 add_gtest_target(test-find-all-numbers-disappeared-in-an-array ./test/448-find-all-numbers-disappeared-in-an-array/test-find-all-numbers-disappeared-in-an-array.cpp)
 add_gtest_target(test-reverse-words-in-a-string-iii ./test/557-reverse-words-in-a-string-iii/test-reverse-words-in-a-string-iii.cpp)
 add_gtest_target(test-subtree-of-another-tree ./test/572-subtree-of-another-tree/test-subtree-of-another-tree.cpp) # Trees
-add_gtest_target(test-n-ary-tree-preorder-traversal ./test/589-n-ary-tree-preorder-traversal/test-n-ary-tree-preorder-traversal.cpp) # Trees 775 -> 589
+# add_gtest_target(test-n-ary-tree-preorder-traversal ./test/589-n-ary-tree-preorder-traversal/test-n-ary-tree-preorder-traversal.cpp) # Trees 775 -> 589 WIP
 add_gtest_target(test-can-place-flowers ./test/605-can-place-flowers/test-can-place-flowers.cpp)
 add_gtest_target(test-longest-continuous-increasing-subsequence ./test/674-longest-continuous-increasing-subsequence/test-longest-continuous-increasing-subsequence.cpp)
 

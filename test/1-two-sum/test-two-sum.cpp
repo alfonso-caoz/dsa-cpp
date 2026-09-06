@@ -25,7 +25,7 @@ protected:
 };
 
 // Test Parameterized: 1-two-sum (src folder)
-TEST_P(SolutionParameterizedTestFixture, TwoSum) {
+TEST_P(SolutionParameterizedTestFixture, T1) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

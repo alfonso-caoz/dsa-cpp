@@ -25,7 +25,7 @@ protected:
 };
 
 // Test Parameterized: 205-isomorphic-strings (src folder)
-TEST_P(SolutionParameterizedTestFixture, IsIsomorphic) {
+TEST_P(SolutionParameterizedTestFixture, T205) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

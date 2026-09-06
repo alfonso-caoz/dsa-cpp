@@ -25,7 +25,7 @@ protected:
 };
 
 // Test Parameterized: 605-can-place-flowers (src folder)
-TEST_P(SolutionParameterizedTestFixture, CanPlaceFlowers) {
+TEST_P(SolutionParameterizedTestFixture, T605) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

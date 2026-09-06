@@ -25,7 +25,7 @@ protected:
 };
 
 // Test Parameterized: 242-valid-anagram (src folder)
-TEST_P(SolutionParameterizedTestFixture, IsAnagram) {
+TEST_P(SolutionParameterizedTestFixture, T242) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

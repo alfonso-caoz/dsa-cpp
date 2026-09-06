@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 557-reverse-words-in-a-string-iii (src folder)
-TEST_P(SolutionParameterizedTestFixture, ReverseWords) {
+TEST_P(SolutionParameterizedTestFixture, T557) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

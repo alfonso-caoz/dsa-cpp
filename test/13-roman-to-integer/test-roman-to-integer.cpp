@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 13-roman-to-integer (src folder)
-TEST_P(SolutionParameterizedTestFixture, RomanToInt) {
+TEST_P(SolutionParameterizedTestFixture, T13) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

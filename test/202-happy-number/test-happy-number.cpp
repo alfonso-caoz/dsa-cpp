@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 202-happy-number (src folder)
-TEST_P(SolutionParameterizedTestFixture, IsHappy) {
+TEST_P(SolutionParameterizedTestFixture, T202) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

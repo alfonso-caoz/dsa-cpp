@@ -97,7 +97,7 @@ protected:
 };
 
 // Test Parameterized: 21-merge-two-sorted-lists (src folder)
-TEST_P(SolutionParameterizedTestFixture, MergeTwoLists) {
+TEST_P(SolutionParameterizedTestFixture, T21) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   ListNode* list1 = vectorToLinkedList(test_param.vector_linked_list1);

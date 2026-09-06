@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 448-find-all-numbers-disappeared-in-an-array (src folder)
-TEST_P(SolutionParameterizedTestFixture, FindDisappearedNumbers) {
+TEST_P(SolutionParameterizedTestFixture, T448) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

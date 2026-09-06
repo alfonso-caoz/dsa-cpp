@@ -27,7 +27,7 @@ protected:
 };
 
 // Test Parameterized: 88-merge-sorted-array (src folder)
-TEST_P(SolutionParameterizedTestFixture, Merge) {
+TEST_P(SolutionParameterizedTestFixture, T88) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   

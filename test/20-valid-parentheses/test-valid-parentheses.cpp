@@ -24,7 +24,7 @@ protected:
 };
 
 // Test Parameterized: 20-valid-parentheses (src folder)
-TEST_P(SolutionParameterizedTestFixture, IsValid) {
+TEST_P(SolutionParameterizedTestFixture, T20) {
   // 1- Arrange: Retrieve Struct TestInputParam
   auto test_param = GetParam();
   
